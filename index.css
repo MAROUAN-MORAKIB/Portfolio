@@ -35,7 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #049DD9;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -75,6 +75,30 @@ body {
     background: var(--black);
     overflow-x: hidden;
 }
+
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.header__text {
+  flex: 1;
+}
+
+.header__image img {
+  width: 400px;
+  height: 400px;
+  margin-left: 35em;
+  margin-top: 5em;
+  object-fit: cover;
+  object-position: top; /* move the subject inside */
+  border-radius: 50%; /* makes it a circle */
+  border: 5px solid white; /* optional: pink border */
+}
+
 
 .row {
     max-width: var(--container-max-width);
